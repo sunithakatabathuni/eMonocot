@@ -4,6 +4,21 @@
 	package { "nfs-common" :
 		ensure => installed
 	}
+# create user
+	user { 'tomcat7':
+		ensure => "present",
+		#comment => "tomcat7",
+		system => "true",
+		uid    =>  "110",
+	}
+
+#create group
+	group { 'tomcat7':
+		ensure => "present",
+		#comment => "tomcat7",
+		system => "true",
+		gid    =>  "116",
+	}
 
 # create Images directory	
 
