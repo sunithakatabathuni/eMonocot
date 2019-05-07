@@ -77,6 +77,7 @@ define wf-portal::wf-portal (
 	$email_imap_socketfactory_fallback,
 	$email_imap_socketfactory_class,
 	$harvester_baseUrl,
+	$harvester_url,
 	$harvester_admin_password,
 	$harvester_services_client_identifier,
 	$portalWebservice_harvester_password,
